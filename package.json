@@ -23,6 +23,9 @@
     "webpack-cli": "^3.2.1"
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.0.0"
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "preact-async-route": "^2.2.1",
+    "preact-router": "^2.6.1"
   }
 }

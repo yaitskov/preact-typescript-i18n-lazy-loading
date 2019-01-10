@@ -1,7 +1,8 @@
 module.exports = {
   entry: "./src/bootstrap.tsx",
   output: {
-    filename: "./public/bundle.js"
+    filename: "./public/bundle.js",
+    publicPath: '/dist/'
   },
   mode: 'development',
   // Enable sourcemaps for debugging webpack's output.
@@ -23,6 +24,7 @@ module.exports = {
             plugins: [
               ['@babel/proposal-class-properties'],
               ['@babel/proposal-object-rest-spread'],
+              ['@babel/plugin-syntax-dynamic-import'],
               ["@babel/transform-react-jsx", { "pragma": "h" }]
             ]
           }
