@@ -7,7 +7,7 @@ export default class Home extends Component {
   }
 
   power2() {
-    return this.powerX('2');
+    return this.powerX(2);
   }
 
   powerX(n: number) {
@@ -17,7 +17,7 @@ export default class Home extends Component {
 
   render() {
     return <h1>
-      This is Profile page of {this.props.matches.pid}
+      This is Profile page of
       <div><Link href='/profile/blah'>blah profile</Link></div>
       <Link href='/terms'>terms</Link>
       <div href='/terms' onClick={this.routeToLink}>terms via route</div>
