@@ -1,5 +1,5 @@
-import { h, Component } from "preact";
-import {Router, Route, route} from 'preact-router';
+import { Component, h } from "preact";
+import { Route, Router, route } from 'preact-router';
 import AsyncRoute from 'preact-async-route';
 import Home from './components/Home';
 
@@ -18,6 +18,7 @@ export class App extends Component<AppProps, AppState> {
   }
 
   Profile = async () => {
+    console.log("profile page is requested");
     const module = await import ('./components/Profile');
     return module.default;
   };

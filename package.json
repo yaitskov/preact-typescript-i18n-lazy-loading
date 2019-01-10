@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "tslint '**/*.tsx'",
     "check-types": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,6 +28,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
     "preact-async-route": "^2.2.1",
-    "preact-router": "^2.6.1"
+    "preact-router": "^2.6.1",
+    "tslint": "^5.12.0"
   }
 }
