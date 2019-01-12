@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "i18n": "i18nline synch",
     "lint": "tslint '**/*.tsx'",
     "check-types": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,7 +20,9 @@
     "@babel/preset-stage-2": "^7.0.0",
     "@babel/preset-typescript": "^7.1.0",
     "babel-loader": "^8.0.5",
+    "i18nline": "^2.0.1",
     "preact": "^8.4.2",
+    "preact-i18nline": "^2.0.0",
     "typescript": "^3.2.2",
     "webpack": "^4.28.1",
     "webpack-cli": "^3.2.1"
@@ -30,5 +33,8 @@
     "preact-async-route": "^2.2.1",
     "preact-router": "^2.6.1",
     "tslint": "^5.12.0"
+  },
+  "i18n": {
+    "autoTranslateTags": ["h1", "h2", "h3", "h4", "h5", "h6", "p"]
   }
 }

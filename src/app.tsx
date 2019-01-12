@@ -2,6 +2,7 @@ import { Component, h } from "preact";
 import { Route, Router, route } from 'preact-router';
 import AsyncRoute from 'preact-async-route';
 import Home from './components/Home';
+import I18n from 'i18nline';
 
 export interface AppProps {
   name: string;
@@ -35,6 +36,7 @@ export class App extends Component<AppProps, AppState> {
   }
   render(props: AppProps, state: AppState) {
     return <div>
+      <p translate="yes">hell world</p>
       <h1>props: {props.name} state: {state.name}</h1>
       <Router>
         <Route path='/' component={Home}/>
